@@ -5,7 +5,7 @@ import utils
 data = utils.load_data("task-data.txt")
 
 # split lines from input file into two lists
-list1, list2 = [list(map(int, t)) for t in zip(*((line.split("   ")) for line in data))]
+list1, list2 = [list(map(int, t)) for t in zip(*(line.split("   ")) for line in data)]
 
 list1.sort()
 list2.sort()
