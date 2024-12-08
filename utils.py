@@ -7,3 +7,7 @@ def load_data(filepath):
     except FileNotFoundError:
         print("File not found!")
         return None
+
+def print_matrix(ma):
+    for row in ma:
+        print(row)
